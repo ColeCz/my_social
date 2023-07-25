@@ -99,7 +99,7 @@ class _FireStoreAppState extends State<FireStoreApp> {
     try {
       await pictures.add({
         'imagePath': imagePath,
-        'comments': [], // Initialize with an empty list for comments
+        'comments': [], 
       });
       print('Picture posted successfully.');
     } catch (e) {
@@ -108,7 +108,7 @@ class _FireStoreAppState extends State<FireStoreApp> {
   }
 
   void _showAddPictureDialog() {
-    String imagePath = ''; // Initialize imagePath here
+    String imagePath = ''; 
 
     showDialog(
       context: context,
@@ -128,7 +128,7 @@ class _FireStoreAppState extends State<FireStoreApp> {
             ),
             TextButton(
               onPressed: () {
-                _addPicture(imagePath); // Use the entered imagePath
+                _addPicture(imagePath); 
                 Navigator.pop(context);
               },
               child: Text('Post'),
